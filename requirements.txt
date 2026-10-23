@@ -1,0 +1,10 @@
+# Dependencies for the real-time ANS-CVS program.
+# Installed into ./.venv by setup_macos.sh.  Tested on macOS (Apple silicon) with
+# Python 3.9.6 (Apple Command Line Tools) and Python 3.11.8 (Anaconda); Python 3.9-3.12 supported.
+numpy==1.26.4
+scipy==1.13.1
+numba==0.60.0          # JIT-compiles the model integrator (requires Python <= 3.12)
+PyQt5==5.15.11         # GUI
+pyqtgraph==0.13.7      # real-time plots
+sounddevice==0.5.1     # microphone input (bundles PortAudio on macOS)
+matplotlib==3.9.2      # only for the test report figure
